@@ -1,0 +1,270 @@
+/* Resetowanie stylów */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Podstawowe style dla strony */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Nagłówek strony */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0072C6;
+  padding: 20px;
+}
+
+.logo a {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #FFF;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.cart a {
+  color: #FFF;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #00AEEF;
+  border-radius: 5px;
+}
+
+/* Baner strony */
+.banner {
+  background-image: url('https://picsum.photos/1200/400?random=1');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner h1 {
+  color: #FFF;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  color: #FFF;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00AEEF;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #0072C6;
+}
+
+/* Sekcja produktów */
+.products {
+  padding: 40px 20px;
+}
+
+.products h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.products ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.products li {
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.products li:last-child {
+  margin-right: 0;
+}
+
+.products img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.products h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.products p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Panel boczny */
+.sidebar {
+  background-color: #F2F2F2;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+}
+
+.sidebar a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Stopka strony */
+footer {
+	  background-color: #333;
+  color: #FFF;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-left p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer-right li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-right a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .cart a {
+    font-size: 16px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+  }
+
+  .banner p {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .products li {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
